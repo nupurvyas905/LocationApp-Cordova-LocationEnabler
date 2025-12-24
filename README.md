@@ -46,8 +46,7 @@ LocationApp/
 ├── package.json
 └── README.md
 
-yaml
-Copy code
+
 
 ---
 
@@ -62,8 +61,8 @@ Uses `cordova.exec()` to communicate with native Android code.
 Uses Android `Intent` to open:
 Settings.ACTION_LOCATION_SOURCE_SETTINGS
 
-yaml
-Copy code
+
+
 
 ---
 
@@ -95,6 +94,7 @@ cordova plugin add ./cordova-plugin-locationenabler
 cordova build android
 cordova run android
 
+---
 
 🧪 Tested On
 Android Device (Physical)
