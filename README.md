@@ -29,22 +29,8 @@ This project is a **Cordova Android application** with a **custom Android plugin
 
 ## 🗂 Project Structure
 
-LocationApp/
-│
-├── www/
-│ ├── index.html
-│ ├── css/
-│ └── js/
-│
-├── cordova-plugin-locationenabler/
-│ ├── plugin.xml
-│ ├── package.json
-│ ├── src/android/LocationEnabler.java
-│ └── www/locationEnabler.js
-│
-├── config.xml
-├── package.json
-└── README.md
+<img width="342" height="400" alt="image" src="https://github.com/user-attachments/assets/dd85d378-8495-4bb1-92b0-6416922db25f" />
+
 
 
 
@@ -60,8 +46,6 @@ Uses `cordova.exec()` to communicate with native Android code.
 ### Android Native Code
 Uses Android `Intent` to open:
 Settings.ACTION_LOCATION_SOURCE_SETTINGS
-
-
 
 
 ---
@@ -94,12 +78,3 @@ cordova plugin add ./cordova-plugin-locationenabler
 cordova build android
 cordova run android
 
----
-
-🧪 Tested On
-Android Device (Physical)
-Android API 35+
-Windows 11
-
-👩‍💻 Author
-Nupur Vyas
