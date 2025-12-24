@@ -1,0 +1,11 @@
+{
+  "name": "cordova-plugin-locationenabler",
+  "version": "1.0.0",
+  "description": "Enable device location",
+  "cordova": {
+    "id": "cordova-plugin-locationenabler",
+    "platforms": ["android"]
+  },
+  "keywords": ["cordova", "android", "location"],
+  "private": true
+}

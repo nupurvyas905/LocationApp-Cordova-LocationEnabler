@@ -22,6 +22,6 @@
   },
   "devDependencies": {
     "cordova-android": "^14.0.1",
-    "cordova-plugin-locationenabler": "file:../cordova-plugin-locationenabler"
+    "cordova-plugin-locationenabler": "file:cordova-plugin-locationenabler"
   }
 }
