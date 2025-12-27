@@ -45,8 +45,9 @@ This project is a **Cordova-based Android application** with a **custom Cordova 
 
 ```java
 Settings.ACTION_LOCATION_SOURCE_SETTINGS
-Redirects the user to system Location Settings
 ```
+Redirects the user to system Location Settings
+
 
 ### 🔄 Working Flow
 - User clicks Enable Location
