@@ -11,19 +11,6 @@ This project is a **Cordova-based Android application** with a **custom Cordova 
 - Demonstrates communication between **JavaScript and native Android code**
 - Follows **Android-recommended approach** for enabling location services
 
----
-
-## ❗ Important Android Security Note
-
-> Android **does NOT allow apps to enable Location (GPS) automatically**.
-
-Even applications like **Google Maps**, **Uber**, or **Ola** cannot directly turn ON location services.
-
-Instead, they:
-- Prompt the user
-- Redirect the user to system Location Settings
-
-✅ This project correctly follows **Android security and privacy policies**.
 
 ---
 
@@ -59,44 +46,49 @@ Instead, they:
 ```java
 Settings.ACTION_LOCATION_SOURCE_SETTINGS
 Redirects the user to system Location Settings
+```
 
-🔄 Working Flow
-User clicks Enable Location
+### 🔄 Working Flow
+- User clicks Enable Location
 
-JavaScript calls cordova.exec
+- JavaScript calls cordova.exec
 
-Cordova invokes native Android plugin
+- Cordova invokes native Android plugin
 
-Plugin opens Location Settings
+- Plugin opens Location Settings
 
-User enables GPS manually
+- User enables GPS manually
 
-▶️ How to Run the Project
-Prerequisites
-Node.js
+### ▶️ How to Run the Project
+Prerequisites:
 
-Java JDK 21
+- Node.js
 
-Android SDK
+- Java JDK 21
 
-Gradle
+- Android SDK
 
-Apache Cordova CLI
+- Gradle
 
-Commands
-bash
-Copy code
+- Apache Cordova CLI
+
+### Commands:
+```java
+
 cordova platform add android
 cordova plugin add ./cordova-plugin-locationenabler
 cordova build android
 cordova run android
-APK Output
-swift
-Copy code
+```
+
+### APK Output:
+```java
+
 platforms/android/app/build/outputs/apk/debug/app-debug.apk
-✅ Conclusion
-This implementation follows Google-recommended best practices and Android security restrictions.
-Directly enabling GPS programmatically is not permitted, so opening the system Location Settings is the correct and approved approach.
+
+```
+
+
 
 👩‍💻 Developer: Nupur Vyas
 📱 Platform: Android (Cordova)
