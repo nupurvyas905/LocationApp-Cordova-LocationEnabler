@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-locationenabler"
+        version="1.0.0">
+
+    <name>LocationEnabler</name>
+
+    <!-- JS -->
+    <js-module src="www/locationenabler.js" name="LocationEnabler">
+        <clobbers target="LocationEnabler" />
+    </js-module>
+
+    <!-- ANDROID -->
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="LocationEnabler">
+                <param name="android-package"
+                       value="com.example.locationenabler.LocationEnabler"/>
+            </feature>
+        </config-file>
+
+        <source-file
+                src="src/android/LocationEnabler.java"
+                target-dir="src/com/example/locationenabler"/>
+
+        <framework src="com.google.android.gms:play-services-location:21.0.1" />
+
+    </platform>
+
+</plugin>
